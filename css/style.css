@@ -1473,9 +1473,9 @@ body.offcanvas {
 
   /* Ensure background color is applied */
   #hero {
-      background-color: #d3d3d3 !important; /* Light grey */
+      background-color: white !important; /* Light grey */
       background-image: none !important; /* Removes any background image */
-      background: #d3d3d3 !important; /* Fallback shorthand for background */
+      background: white !important; /* Fallback shorthand for background */
   }
 
   /* Completely remove any image */
