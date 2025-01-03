@@ -1461,3 +1461,53 @@ body.offcanvas {
   background-repeat: no-repeat !important;
 }
 
+
+/* Mobile-specific styles */
+@media screen and (max-width: 768px) {
+  #hero {
+      height: auto;
+  }
+
+  #hero .flexslider {
+      height: auto;
+  }
+
+  #hero .slides li {
+      background-size: cover;
+      background-position: center;
+      height: 400px; /* Adjust for mobile */
+  }
+
+  #hero .slider-text {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: translate(0, 0);
+      text-align: center;
+      padding: 20px;
+  }
+
+  #hero .slider-text h1 {
+      font-size: 2rem;
+  }
+
+  #hero .slider-text h2 {
+      font-size: 1.2rem;
+  }
+
+  #hero .slider-text p {
+      margin-top: 10px;
+  }
+}
+
+/* Hide mobile version on desktop */
+@media screen and (min-width: 769px) {
+  #hero .js-fullheight {
+      display: block; /* Ensure visibility on desktop */
+  }
+}
+
+
+
+
+
