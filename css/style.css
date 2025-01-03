@@ -1457,57 +1457,35 @@ body.offcanvas {
 
 .js-fullheight li {
   background-size: 110% !important; /* Force the zoom-in */
-  background-position: 13% center !important;
+  background-position: -59% center !important;
   background-repeat: no-repeat !important;
 }
 
 
 /* Mobile-specific styles */
 @media screen and (max-width: 768px) {
-  #hero {
-      height: auto;
-  }
-
-  #hero .flexslider {
-      height: auto;
-  }
-
-  #hero .slides li {
-      background-size: cover;
-      background-position: center;
-      height: 400px; /* Adjust for mobile */
-  }
-
-  #hero .slider-text {
-      position: relative;
-      top: 0;
-      left: 0;
-      transform: translate(0, 0);
-      text-align: center;
-      padding: 20px;
-  }
-
-  #hero .slider-text h1 {
-      font-size: 2rem;
-  }
-
-  #hero .slider-text h2 {
-      font-size: 1.2rem;
-  }
-
+  /* Set text color to white */
+  #hero .slider-text h1, 
+  #hero .slider-text h2, 
   #hero .slider-text p {
-      margin-top: 10px;
+      color: rgb(0, 0, 0) !important;
+  }
+
+  /* Ensure background color is applied */
+  #hero {
+      background-color: #d3d3d3 !important; /* Light grey */
+      background-image: none !important; /* Removes any background image */
+      background: #d3d3d3 !important; /* Fallback shorthand for background */
+  }
+
+  /* Completely remove any image */
+  #hero .slides li {
+      background: none !important; /* Ensures no background image */
+  }
+
+  /* Optional padding for better mobile spacing */
+  #hero .slider-text {
+      padding: 20px;
+      text-align: center;
   }
 }
-
-/* Hide mobile version on desktop */
-@media screen and (min-width: 769px) {
-  #hero .js-fullheight {
-      display: block; /* Ensure visibility on desktop */
-  }
-}
-
-
-
-
-
