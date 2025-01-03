@@ -1442,7 +1442,7 @@ body.offcanvas {
     align-items: center;
     border-radius: 50%;
     background-color: white;
-    color: black;
+    color: #2c98f0; 
     text-decoration: none;
     font-size: 20px; /* Reduced icon size */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -1457,7 +1457,7 @@ body.offcanvas {
 
 .js-fullheight li {
   background-size: 110% !important; /* Force the zoom-in */
-  background-position: 10% center !important;
+  background-position: 13% center !important;
   background-repeat: no-repeat !important;
 }
 
